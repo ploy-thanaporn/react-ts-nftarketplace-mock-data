@@ -118,7 +118,7 @@ function Navbar({ children }: PropType) {
           </ul>
         </div>
       </nav>
-      <div className="h-screens">{children}</div>
+      <div className="h-screen">{children}</div>
       <Footer />
     </div>
   );
