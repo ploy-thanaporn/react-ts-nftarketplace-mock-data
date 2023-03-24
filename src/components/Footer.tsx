@@ -6,25 +6,25 @@ import { navLink } from "../data/nav";
 const Footer = () => {
   return (
     <div className="bg-[#07111E] w-full h-[400px] md:h-[557px] lg:h-[375px]">
-      <div className="lg:py-[86px] lg:px-[146px]">
+      <div className="py-2 px-4 md:py-8 lg:py-[86px] lg:px-[146px]">
         <div className="w-full h-[203px]">
-          <div className="flex justify-between">
-            <div className="flex flex-col">
+          <div className="flex flex-col lg:flex-row justify-between">
+            <div className="flex flex-col lg:max-w-[383px]">
               <div>
                 <p className="text-[#E8F0F9] text-16 md:text-33">
                   Following now
                 </p>
-                <p className="text-neutral-200 text-10 md:text-nav md:mt-2 lg:max-w-[280px]">
+                <p className="text-neutral-200 text-10 md:text-nav md:mt-2 md:max-w-[270px] lg:max-w-[280px]">
                   Join now with Wetxn to get the latest news about NFTs
                 </p>
               </div>
               <div className="my-2 pr-2">
                 <div className="flex items-center">
-                  <p className="text-neutral-50 text-14 md:text-16 md:mt-2 lg:text-14">
+                  <p className="text-neutral-50 text-14 md:text-16 md:mt-2 lg:text-14 w-full">
                     Enter Your email
                   </p>
-                  <div className="ml-[146px] md:ml-[488px] lg:ml-[152px]">
-                    <button className="w-[96px] h-[36px] md:w-[114px] md:h-[44px] bg-[#255495] text-14 text-white font-semibold rounded-md">
+                  <div>
+                    <button className="h-[36px] w-[96px] md:w-[114px] md:h-[44px] bg-[#255495] text-14 text-white font-semibold rounded-md">
                       Subscribe
                     </button>
                   </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className="w-[288px] h-[1px] md:w-[630px] lg:w-[288px] text-neutral-50 bg-slate-100"></div>
               </div>
             </div>
-            <div className="flex mt-4 px-9 lg:px-0 lg:text-left">
+            <div className="flex mt-4 lg:pl-8 lg:text-left">
               {navLink
                 .map((nav) => (
                   <div className="mx-auto lg:pr-20 lg:mx-0" key={nav.key}>
@@ -53,8 +53,8 @@ const Footer = () => {
                 ))
                 .slice(0, 3)}
             </div>
-            <div className="flex flex-row lg:flex-col items-center">
-              <div>
+            <div className="flex flex-row justify-between lg:flex-col items-center">
+              <div className="lg:-ml-12">
                 <img
                   src={logo}
                   alt=""
