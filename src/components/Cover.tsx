@@ -11,7 +11,7 @@ const Cover = () => {
   const [hovering, setHovering] = useState(false);
   return (
     <div className="relative h-[26em] md:h-[32rem] lg:h-screen 2xl:h-screen">
-      <div className="w-full bg-red-50 h-[26rem] md:h-[32rem] lg:h-screen 2xl:h-screen absolute z-0"></div>
+      <div className="w-full bg-red-100 h-[26rem] md:h-[32rem] lg:h-screen 2xl:h-screen absolute z-0"></div>
       <div className="w-full bg-white h-[26rem] md:h-[32rem] lg:h-screen 2xl:h-screen absolute opacity-50 z-10"></div>
       <div className="w-full absolute z-20">
         <div className="lg:flex">

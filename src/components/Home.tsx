@@ -1,8 +1,9 @@
-import ArtisitSection from "./Artist/ArtistSection";
+import ArtisitSection from "./landing-page/Artist/ArtistSection";
 import Cover from "./Cover";
-import CreateSection from "./Create/CreateSection";
-import ExploreSection from "./Explore/ExploreSection";
+import CreateSection from "./landing-page/Create/CreateSection";
+
 import TrendingSection from "./Trending/TrendingSection";
+import ExploreSection from "./landing-page/Explore/ExploreSection";
 
 const Home = () => {
   return (

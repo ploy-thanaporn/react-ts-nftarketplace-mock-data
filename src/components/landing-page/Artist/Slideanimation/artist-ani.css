@@ -1,0 +1,92 @@
+section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+div.artist-slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+div.artist-slider ul.artist-lane {
+  display: flex;
+  height: 100%;
+}
+
+#stffull div.container-artist-animation ul.artist-lane {
+  width: 500%;
+}
+#stffull div.container-artist-animation ul.artist-lane li.artist-box {
+  -webkit-animation: translatestf 30s linear infinite;
+  animation: translatestf 30s linear infinite;
+}
+
+@keyframes translateinfiniteLtr {
+  0% {
+    transform: translateX(calc(-90px * 12));
+  }
+}
+
+@keyframes translateinfiniteRtl {
+  100% {
+    transform: translateX(calc(-90px * 12));
+  }
+}
+
+/* shadow left-right */
+div.artist-slider div.container-artist-animation {
+  overflow: hidden;
+  position: relative;
+}
+
+#infinite div.container-artist-animation::before,
+#infinite div.container-artist-animation::after {
+  content: ' ';
+  position: absolute;
+  z-index: 9;
+  width: 180px;
+  height: 100%;
+}
+
+#infinite div.container-artist-animation::before {
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+#infinite div.container-artist-animation::after {
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#infinite div.container-artist-animation ul.artist-lane {
+  width: calc(180px * 24);
+}
+
+#infinite.ltr div.container-artist-animation ul.artist-lane li.artist-box {
+  -webkit-animation: translateinfiniteLtr 10s linear infinite;
+  animation: translateinfiniteLtr 10s linear infinite;
+}
+#infinite.rtl div.container-artist-animation ul.artist-lane li.artist-box {
+  -webkit-animation: translateinfiniteRtl 10s linear infinite;
+  animation: translateinfiniteRtl 10s linear infinite;
+}
+
+#infinite.ltr:hover
+  div.container-artist-animation
+  ul.artist-lane
+  li.artist-box {
+  animation-play-state: paused;
+}
+#infinite.rtl:hover
+  div.container-artist-animation
+  ul.artist-lane
+  li.artist-box {
+  animation-play-state: paused;
+}

@@ -11,7 +11,7 @@ const TrendingSection = () => {
       <div className="flex justify-center mt-[101px] relative z-10">
         <div className="flex flex-col justify-center text-center max-w-[320px] md:max-w-xl 2xl:max-w-3xl">
           <h2 className="text-23 md:text-39 2xl:text-5xl font-bold text-neutral-900">
-            Trending NFTs"
+            Trending NFTs
           </h2>
           <span className="text-sm md:text-16 2xl:text-xl text-neutral-600 mt-1 md:mt-2">
             They live as NFTs on an eco-friendly blockchain
