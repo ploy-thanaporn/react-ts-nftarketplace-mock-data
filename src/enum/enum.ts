@@ -45,3 +45,17 @@ export enum CATEGORY {
   UTILITY = "Utility",
   VITRAUL_WORLDS = "Virtual Worlds",
 }
+export enum FILTER_LIST {
+  STATUS = "STATUS",
+  PRICE = "PRICE",
+  ITEM_QUANITY = "ITEM_QUANITY",
+  COLLECTION = "COLLECTION",
+  CHAIN = "CHAIN",
+  CATEGORY = "CATEGORY",
+}
+
+export enum FILTER_ITEM_TYPE {
+  NO_IMG = "NO_IMG",
+  WITH_IMG = "WITH_IMG",
+  INPUT = "INPUT",
+}

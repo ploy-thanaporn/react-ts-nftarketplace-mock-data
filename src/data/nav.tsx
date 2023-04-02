@@ -48,3 +48,10 @@ export const navLink = [
     icon: <MdOutlineGroups className="w-full -full" />,
   },
 ];
+
+export const menuTopBarAccount = [
+  { path: "collection-list", name: "Collected" },
+  { path: "created-section", name: "Created" },
+];
+
+export const menuTopBarCollection = [{ path: "", name: "Items" }];
