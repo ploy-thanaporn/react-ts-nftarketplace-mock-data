@@ -118,7 +118,9 @@ function Navbar({ children }: PropType) {
           </ul>
         </div>
       </nav>
-      <div className="h-screen">{children}</div>
+      <div className="min-h-[calc(100%-442.38px)] md:min-h-[calc(100%-591px)] lg:min-h-[calc(100%-474px)]">
+        {children}
+      </div>
       <Footer />
     </div>
   );
