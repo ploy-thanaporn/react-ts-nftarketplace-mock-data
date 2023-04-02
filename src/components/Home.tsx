@@ -1,5 +1,6 @@
 import ArtisitSection from "./Artist/ArtistSection";
 import Cover from "./Cover";
+import CreateSection from "./Create/CreateSection";
 import ExploreSection from "./Explore/ExploreSection";
 import TrendingSection from "./Trending/TrendingSection";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <ArtisitSection />
       <TrendingSection />
       <ExploreSection />
+      <CreateSection />
     </div>
   );
 };
